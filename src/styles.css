@@ -1,3 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;700;900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+img {
+   @apply max-w-full;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   @apply font-black text-headingColor;
+}
+
+h1 {
+   @apply text-4xl lg:text-6xl;
+}
+
+h2 {
+   @apply text-3xl mb-8 lg:text-4xl2;
+}
+
+.section-intro {
+   @apply flex flex-col items-center justify-center text-center pt-8;
+}
+
+.section-intro .line {
+   @apply block h-24 w-px bg-textColor;
+}
+
+.section-intro .circle {
+   @apply block border-2 text-textColor rounded-full h-12 w-12 flex items-center justify-center bg-white;
+}
+
+.btn {
+   @apply font-bold text-white  px-7 py-3 rounded-4xl;
+}
+
+.cta {
+   @apply text-center py-20 -mt-6 lg:text-left lg:py-28 bg-footerImgMob lg:bg-footerImgDesk bg-no-repeat bg-cover relative after:absolute after:content-[''] after:top-0 after:left-0 after:h-full after:w-full after:bg-primaryGreen after:opacity-90;
+}
